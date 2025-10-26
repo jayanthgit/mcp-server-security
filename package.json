@@ -1,19 +1,23 @@
 {
-  "name": "mcp-server-full",
+  "name": "eos-mcp-server",
   "version": "1.0.0",
-  "description": "Full-stack GenAI assistant with mock services",
+  "description": "Eos Security Assistant Server",
   "main": "mcp-server.js",
   "scripts": {
-    "start": "node mcp-server.js"
+    "start": "node mcp-server.js",
+    "dev": "nodemon mcp-server.js"
   },
   "dependencies": {
-    "@langchain/google-genai": "^0.0.12",
+    "@langchain/core": "^0.2.14",
+    "@langchain/google-genai": "^0.0.21",
     "body-parser": "^1.20.2",
-    "cookie-parser": "^1.4.6",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "express-session": "^1.18.0",
-    "langchain": "^0.1.37"
+    "jsonwebtoken": "^9.0.2",
+    "langchain": "^0.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
