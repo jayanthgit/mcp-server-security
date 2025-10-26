@@ -1,0 +1,19 @@
+{
+  "name": "mcp-server-full",
+  "version": "1.0.0",
+  "description": "Full-stack GenAI assistant with mock services",
+  "main": "mcp-server.js",
+  "scripts": {
+    "start": "node mcp-server.js"
+  },
+  "dependencies": {
+    "@langchain/google-genai": "^0.0.12",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "langchain": "^0.1.37"
+  }
+}
